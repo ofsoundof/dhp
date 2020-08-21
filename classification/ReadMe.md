@@ -2,13 +2,13 @@
 ## Test
 1. `pip install -r ../requirements.txt`
 
-2. Download [Tiny-ImageNet]{} from [Google Drive] or [Dropbox]. CIFAR dataset is automatically downloaded the first time the code is run. Place the dataset at your `--dir_data` directory.
+2. Download [Tiny-ImageNet](http://www.image-net.org/) from [Google Drive](https://drive.google.com/file/d/1Aajaob10vzDqPbWZVNMYxJRowlNE0yd5/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/2kbqse543y2ule0/tiny-imagenet-200.tar.xz?dl=0). CIFAR dataset is automatically downloaded the first time the code is run. Place the dataset at your `--dir_data` directory.
 
-2. Download the model zoo from [Google Drive](https://drive.google.com/file/d/1ojU4jkgwJ6-qHlbD1e_nBWlUAt6ouNmz/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/vrc3zacctwm3z11/model_zoo_classification.zip?dl=0). This contains the compressed models. Place the models in `./model_zoo`.
+3. Download the model zoo from [Google Drive](https://drive.google.com/file/d/1ojU4jkgwJ6-qHlbD1e_nBWlUAt6ouNmz/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/vrc3zacctwm3z11/model_zoo_classification.zip?dl=0). This contains the compressed models. Place the models in `./model_zoo`.
 
-3. [`cd ./scripts/dhp_camera_ready`](./scripts/dhp_camera_ready). 
+4. [`cd ./scripts/dhp_camera_ready`](./scripts/dhp_camera_ready). 
 
-4. Use the following scripts in [`./scripts/dhp_camera_ready/demo_test_dhp.sh`](./scripts/dhp_camera_ready/demo_test_dhp.sh) to test the compressed models. 
+5. Use the following scripts in [`./scripts/dhp_camera_ready/demo_test_dhp.sh`](./scripts/dhp_camera_ready/demo_test_dhp.sh) to test the compressed models. 
 
     Be sure the change the directories `--pretrain`, `--dir_data`, and `--dir_save`.
 
@@ -17,7 +17,7 @@
 	`--dir_data`: where the dataset is stored.
 
 	`--dir_save`: where you want to save the results.
-5. Demo: test ResNet56 with target compression ratio at about 50%.
+6. Demo: test ResNet56 with target compression ratio at about 50%.
 ```bash
 	# ResNet56, Ratio=0.5
 	python ../../main_dhp.py --save ResNet_DHP_SHARE_L56_Ratio50 --template CIFAR10_ResNet --model ResNet_DHP_SHARE --depth 56 --test_only \
