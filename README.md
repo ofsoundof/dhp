@@ -51,17 +51,13 @@ Illustration  of  the  hypernetwork  designed  for  network  pruning.  It  gener
  
 ## Results
 
-<img src="/figs/hinge_kse_flops.png" width="400"> <img src="/figs/hinge_kse_params.png" width="400">
+<img src="/figs/table1.png" width="600"> 
 
-FLOP and parameter comparison between KSE and Hinge under different compression ratio. ResNet56 is compressed. Top-1 error rate is reported.
+<img src="/figs/table2.png" width="600">
 
-<img src="/figs/resnet164_cifar100.png" width="400"> <img src="/figs/resnext164_cifar100.png" width="400">
+<img src="/figs/table3.png" width="600">
 
-Comparison between SSS and the proposed Hinge method on ResNet and ResNeXt. Top-1 error rate is reported for CIFAR100.
-
-<img src="/figs/table1.png" width="450">
-<img src="/figs/table2.png" width="450">
-<img src="/figs/table4.png" width="450">
+<img src="/figs/figure.png" width="600">
 
 
 ## Reference
@@ -69,7 +65,7 @@ If you find our work useful in your research of publication, please cite our wor
 
 ```
 @inproceedings{li2020dhp,
-  title={DHP: Differentiable Meta Pruning viaHyperNetworks},
+  title={DHP: Differentiable Meta Pruning via HyperNetworks},
   author={Li, Yawei and Gu, Shuhang and Zhang, Kai and Van Gool, Luc and Timofte, Radu},
   booktitle={Proceedings of the European Conference on Computer Vision},
   year={2020}
@@ -77,23 +73,23 @@ If you find our work useful in your research of publication, please cite our wor
 ```
 
 ## Acknowledgements
-This work was partly supported by the ETH Z ̈urich Fund (OK), a Huawei Tech-nologies Oy (Finland) project, an Amazon AWS grant, and an Nvidia grant.
+This work was partly supported by the ETH Zurich Fund (OK), a Huawei Tech-nologies Oy (Finland) project, an Amazon AWS grant, and an Nvidia grant.
 
-This repository is also based on the our former paper [Filter Basis](https://github.com/ofsoundof/learning_filter_basis) and [Group Sparsity](https://github.com/ofsoundof/group_sparsity). If you are interested, please refer to:
+This repository is based on the our former paper [Filter Basis](https://github.com/ofsoundof/learning_filter_basis) and [Group Sparsity](https://github.com/ofsoundof/group_sparsity). If you are interested, please refer to:
 
 ```
-@inproceedings{li2019learning,
-  title = {Learning Filter Basis for Convolutional Neural Network Compression},
-  author = {Li, Yawei and Gu, Shuhang and Van Gool, Luc and Timofte, Radu},
-  booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
-  year = {2019}
-}
-
 @inproceedings{li2020group,
   title={Group Sparsity: The Hinge Between Filter Pruning and Decomposition for Network Compression},
   author={Li, Yawei and Gu, Shuhang and Mayer, Christoph and Van Gool, Luc and Timofte, Radu},
   booktitle={Proceedings of the IEEE International Conference on Computer Vision},
   year={2020}
+}
+
+@inproceedings{li2019learning,
+  title = {Learning Filter Basis for Convolutional Neural Network Compression},
+  author = {Li, Yawei and Gu, Shuhang and Van Gool, Luc and Timofte, Radu},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+  year = {2019}
 }
 ```
 
