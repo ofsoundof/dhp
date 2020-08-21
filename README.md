@@ -44,10 +44,10 @@ Illustration  of  the  hypernetwork  designed  for  network  pruning.  It  gener
 * IPython
 
 ## Image Classification
-
+For the details on image classification, please refer to [classification](/classification).
 
 ## Image Restoration
-
+For the details on image restoration, please refer to [restoration](/restoration).
  
 ## Results
 
