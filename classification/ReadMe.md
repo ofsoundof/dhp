@@ -17,15 +17,11 @@
 	`--dir_data`: where the dataset is stored.
 
 	`--dir_save`: where you want to save the results.
-5. Demo
+5. Demo: test ResNet56 with target compression ratio at about 50%.
 ```bash
-	directory=~/projects/
-	dir_pretrain="${directory}/***/model_zoo"
-	dir_data=***
-	dir_save="***
 	# ResNet56, Ratio=0.5
-	CUDA_VISIBLE_DEVICES=1 python ../../main_dhp.py --save ResNet_DHP_SHARE_L56_Ratio50 --template CIFAR10_ResNet --model ResNet_DHP_SHARE --depth 56 --test_only \
-	--pretrain "${dir_pretrain}/resnet56_ratio50.pt" --dir_data  ${dir_data} --dir_save ${dir_save}
+	python ../../main_dhp.py --save ResNet_DHP_SHARE_L56_Ratio50 --template CIFAR10_ResNet --model ResNet_DHP_SHARE --depth 56 --test_only \
+	--pretrain XXX --dir_data  XXX --dir_save XXX
 ```
 ## Train
 
@@ -33,4 +29,21 @@
 
 2. Run the scripts `dhp_XXX.sh` to reproduce the results in our paper, where `XXX` may be replace by `mobilenet`, `mobilenetv2`, `resnet20`, `resnet56`, `resnet110` and `resnet164` depending on which network you want to compress. 
 
-3. Be sure the change the directories `--pretrain`, `--dir_data`, and `--dir_save`.
+3. Be sure the change the directories `--dir_data` and `--dir_save`.
+
+4. Demo: compress ResNet56 with target compression ratio at about 50%.
+```bash
+	# ResNet56, Ratio=0.50
+	MODEL=ResNet_DHP_SHARE
+	LAYER=56
+	BATCH=64
+	TEMPLATE=CIFAR10
+	REG=3e-4
+	T=5e-3
+	LIMIT=0.01
+	RATIO=0.5
+	CHECKPOINT=${MODEL}_${TEMPLATE}_L${LAYER}_B${BATCH}_Reg${REG}_T${T}_Limit${LIMIT}_Ratio${RATIO}
+	python ../../main_dhp.py --save $CHECKPOINT --template "${TEMPLATE}_ResNet" --model ${MODEL} --batch_size ${BATCH} --epochs 300 --decay step-20-50+step-150-225 \
+	--depth ${LAYER} --prune_threshold ${T} --regularization_factor ${REG} --ratio ${RATIO} --stop_limit ${LIMIT} --print_model \
+	--dir_save XXX --dir_data XXX
+```
