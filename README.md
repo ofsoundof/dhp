@@ -19,15 +19,17 @@ To circumvent this problem, this paper introduces a differentiable pruning metho
 
 ## Contribution
 **1. A new architecture of hypernetwork is designed. Different from the classicalhypernetwork composed of linear layers, the new design is tailored to automatic network pruning. By only operating on the input of the hypernetwork,the backbone network can be pruned.**
+
 **2. A differentiable automatic networking pruning method is proposed. The differentiability comes with the designed hypernetwork and the utilized proximal gradient. It accelerates the convergence of the pruning algorithm.**
+
 **3. By the experiments on various vision tasks and modern convolutional neural  networks  (CNNs),  the  potential  of  automaticnetwork pruning as fine-grained architecture search is revealed.**
 
 ## Methodology
-<img src="/figs/dhp_pipeline.png" width="900">
+<img src="/figs/dhp_pipeline.png" width="700">
 
 The workflow of the proposed differentiable pruning method. The latent vectors **z** attached  to  the  convolutional  layers  act  as  the  handle  for  network  pruning.  The hypernetwork  takes  two  latent  vectors  as  input  and  emits  output  as  the  weight  ofthe  backbone  layer. l1 sparsity  regularization  is  enforced  on  the  latent  vectors.  The differentiability  comes  with  the  hypernetwork  tailored  to  pruning  and  the  proximal gradient exploited to solve problem. After the pruning stage, sparse latent vectors are obtained which result in pruned weights after being passed through the hypernetwork
 
-<img src="/figs/hypernetwork.png" width="500">
+<img src="/figs/hypernetwork.png" width="700">
 
 Illustration  of  the  hypernetwork  designed  for  network  pruning.  It  generates a  weight  tensor  after  passing  the  input  latent  vector  through  the  latent  layer,  theembedding layer, and the explicit layer. If one element in the latent vector of the current layer is pruned, the corresponding slice of the output tensor is also pruned.
 
