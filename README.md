@@ -68,20 +68,18 @@ Comparison between SSS and the proposed Hinge method on ResNet and ResNeXt. Top-
 If you find our work useful in your research of publication, please cite our work:
 
 ```
-@inproceedings{li2020group,
-  title={Group Sparsity: The Hinge Between Filter Pruning and Decomposition for Network Compression},
-  author={Li, Yawei and Gu, Shuhang and Mayer, Christoph and Van Gool, Luc and Timofte, Radu},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+@inproceedings{li2020dhp,
+  title={DHP: Differentiable Meta Pruning viaHyperNetworks},
+  author={Li, Yawei and Gu, Shuhang and Zhang, Kai and Van Gool, Luc and Timofte, Radu},
+  booktitle={Proceedings of the European Conference on Computer Vision},
   year={2020}
 }
 ```
 
 ## Acknowledgements
-This work was partly supported by the ETH Zurich Fund (OK), by VSS ASTRA, SBB and Huawei projects, and by Amazon AWS and Nvidia GPU grants.
+This work was partly supported by the ETH Z ̈urich Fund (OK), a Huawei Tech-nologies Oy (Finland) project, an Amazon AWS grant, and an Nvidia grant.
 
-This repository is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for making their EDSR codes public.
-
-This repository is also based on the [implementation](https://github.com/ofsoundof/learning_filter_basis) of our former paper [Learning Filter Basis for Convolutional Neural Network Compression](https://arxiv.org/abs/1908.08932). If you are interested, please refer to:
+This repository is also based on the our former paper [Filter Basis](https://github.com/ofsoundof/learning_filter_basis) and [Group Sparsity](https://github.com/ofsoundof/group_sparsity). If you are interested, please refer to:
 
 ```
 @inproceedings{li2019learning,
@@ -89,6 +87,13 @@ This repository is also based on the [implementation](https://github.com/ofsound
   author = {Li, Yawei and Gu, Shuhang and Van Gool, Luc and Timofte, Radu},
   booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
   year = {2019}
+}
+
+@inproceedings{li2020group,
+  title={Group Sparsity: The Hinge Between Filter Pruning and Decomposition for Network Compression},
+  author={Li, Yawei and Gu, Shuhang and Mayer, Christoph and Van Gool, Luc and Timofte, Radu},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  year={2020}
 }
 ```
 
