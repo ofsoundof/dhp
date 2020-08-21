@@ -12,11 +12,11 @@
 
     Be sure the change the directories `--pretrain`, `--dir_data`, and `--dir_save`.
 
-    `--pretrain`: the pretrained model.
+    `--pretrain`: where the pretrained models are placed.
 
-	`--dir_data`: where the dataset is stored.
+    `--dir_data`: where the dataset is stored.
 
-	`--dir_save`: where you want to save the results.
+    `--dir_save`: where you want to save the results.
 6. Demo: test ResNet56 with target compression ratio at about 50%.
 ```bash
 	# ResNet56, Ratio=0.5
@@ -27,11 +27,11 @@
 
 1. [`cd ./scripts/dhp_camera_ready`](./scripts/dhp_camera_ready). 
 
-2. Run the scripts `dhp_XXX.sh` to reproduce the results in our paper, where `XXX` may be replace by `mobilenet`, `mobilenetv2`, `resnet20`, `resnet56`, `resnet110` and `resnet164` depending on which network you want to compress. 
+2. Run the scripts `dhp_XXX.sh` to reproduce the results in our paper, where `XXX` may be replaced by `mobilenet`, `mobilenetv2`, `resnet20`, `resnet56`, `resnet110` and `resnet164` depending on which network you want to compress. 
 
 3. Be sure the change the directories `--dir_data` and `--dir_save`.
 
-4. Demo: compress ResNet56 with target compression ratio at about 50%.
+4. Demo: compress ResNet56 with target compression ratio 50%.
 ```bash
 	# ResNet56, Ratio=0.50
 	MODEL=ResNet_DHP_SHARE
