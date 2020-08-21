@@ -1,8 +1,8 @@
 #!/bin/bash
 #Submit to GPU
 
-directory=~/projects
-dir_pretrain="${directory}/logs/dhp_classification"
+directory=~/projects/
+dir_pretrain="${directory}/image_classification/dhp/classification/model_zoo"
 dir_data="${directory}/data/"
 dir_save="${directory}/logs/dhp_results/"
 
@@ -67,7 +67,6 @@ CUDA_VISIBLE_DEVICES=1 python ../../main_dhp.py --save ResNet_DHP_SHARE_L56_Rati
 # ResNet56, Ratio=0.5
 CUDA_VISIBLE_DEVICES=1 python ../../main_dhp.py --save ResNet_DHP_SHARE_L56_Ratio50 --template CIFAR10_ResNet --model ResNet_DHP_SHARE --depth 56 --test_only \
 --pretrain "${dir_pretrain}/resnet56_ratio50.pt" --dir_data  ${dir_data} --dir_save ${dir_save}
-COMMENT
 
 #################################
 # ResNet110
