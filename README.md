@@ -61,7 +61,7 @@ For the details on image restoration, please refer to [restoration](/restoration
 
 
 ## Reference
-If you find our work useful in your research of publication, please cite our work:
+If you find our work useful in your research, you are welcome to refer to our work:
 
 ```
 @inproceedings{li2020dhp,

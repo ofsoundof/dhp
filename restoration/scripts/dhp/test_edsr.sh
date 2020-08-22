@@ -18,7 +18,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main.py --model $MODEL --save $CHECKPOINT --sca
 --input_dim 128 --data_test $test_set --save_results \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_scale4.pt"
 #done
 
 
@@ -31,10 +31,10 @@ SCALE=4
 export CHECKPOINT="Test/${TEMPLATE}_X${SCALE}_L${N_BLOCK}F${N_FEATS}"
 echo $CHECKPOINT
 CUDA_VISIBLE_DEVICES=1 python ../main.py --template $TEMPLATE --model ClusterNet --save $CHECKPOINT --scale $SCALE --n_resblocks $N_BLOCK --n_feats ${N_FEATS} --res_scale 1 \
---input_dim 128 --data_test $test_set --save_results --pretrain_cluster "${directory}/logs/dhp_restoration/edsr/edsr_scale4.pt" \
+--input_dim 128 --data_test $test_set --save_results --pretrain_cluster "${directory}/dhp/restoration/model_zoo/edsr/edsr_scale4.pt" \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_cluster_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_cluster_scale4.pt"
 #done
 
 
@@ -51,7 +51,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main.py --model $MODEL --save $CHECKPOINT --sca
 --input_dim 128 --data_test $test_set --save_results \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_factor_sic3_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_factor_sic3_scale4.pt"
 #done
 
 
@@ -68,7 +68,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main.py --model $MODEL --save $CHECKPOINT --sca
 --input_dim 128 --data_test $test_set --save_results \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_factor_sic2_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_factor_sic2_scale4.pt"
 #done
 
 
@@ -86,7 +86,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main.py --model $MODEL --save $CHECKPOINT --sca
 --input_dim 128 --data_test $test_set --save_results \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_basis_128+40_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_basis_128+40_scale4.pt"
 #done
 
 
@@ -104,7 +104,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main.py --model $MODEL --save $CHECKPOINT --sca
 --input_dim 128 --data_test $test_set --save_results \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_basis_128+27_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_basis_128+27_scale4.pt"
 #done
 
 
@@ -121,7 +121,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main_dhp.py --save $CHECKPOINT --model $MODEL -
 --input_dim 128 --data_test $test_set --save_results --prune_upsampler \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_dhp_ratio2_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_dhp_ratio2_scale4.pt"
 #done
 
 
@@ -138,7 +138,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main_dhp.py --save $CHECKPOINT --model $MODEL -
 --input_dim 128 --data_test $test_set --save_results --prune_upsampler \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_dhp_ratio4_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_dhp_ratio4_scale4.pt"
 #done
 
 
@@ -155,7 +155,7 @@ CUDA_VISIBLE_DEVICES=1 python ../main_dhp.py --save $CHECKPOINT --model $MODEL -
 --input_dim 128 --data_test $test_set --save_results --prune_upsampler \
 --dir_save "${directory}/logs" \
 --dir_data "${directory}/data" \
---test_only --pretrain "${directory}/logs/dhp_restoration/edsr/edsr_dhp_ratio6_scale4.pt"
+--test_only --pretrain "${directory}/dhp/restoration/model_zoo/edsr/edsr_dhp_ratio6_scale4.pt"
 #done
 done
 
