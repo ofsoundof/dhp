@@ -37,11 +37,11 @@
 
    i.   Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) training and validation images in the NTIRE-2017 challenge. 
 
-   ii.  Download super-resolution (Set5, Set14, B100, and Urban100) benchmark and denoising benchmark (Set68) from [GoogleDrive](https://drive.google.com/file/d/1OXgs2ap0aDymRgSp6uBBVpg6SY6Bpduo/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/uo75nf4yw5gyk9p/restoration_dataset.zip?dl=0).
+   ii.  Download super-resolution (Set5, Set14, B100, and Urban100) benchmark and denoising benchmark (Set68) from [the Releases/v1.0.0](https://github.com/ofsoundof/dhp/releases/tag/v1.0.0) or [Dropbox](https://www.dropbox.com/s/uo75nf4yw5gyk9p/restoration_dataset.zip?dl=0).
    
    iii. Prepare the folder structure like the one above.
 
-2. Download the compressed models form [Google Drive](https://drive.google.com/file/d/1I7S41V_CPHqBepu8lR-Lh8Km-joxnfZ-/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/6fivh4kaokx6m2s/model_zoo_restoration.zip?dl=0).
+2. Download the compressed models from [the Releases/v1.0.0](https://github.com/ofsoundof/dhp/releases/tag/v1.0.0) or [Dropbox](https://www.dropbox.com/s/6fivh4kaokx6m2s/model_zoo_restoration.zip?dl=0).
 
 3. `cd ./scripts/dhp/`
 
