@@ -2,9 +2,9 @@
 ## Test
 1. `pip install -r ../requirements.txt`
 
-2. Download [Tiny-ImageNet](http://www.image-net.org/) from [Google Drive](https://drive.google.com/file/d/1Aajaob10vzDqPbWZVNMYxJRowlNE0yd5/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/2kbqse543y2ule0/tiny-imagenet-200.tar.xz?dl=0). CIFAR dataset is automatically downloaded the first time the code is run. Place the dataset at your `--dir_data` directory.
+2. Download [Tiny-ImageNet](http://www.image-net.org/) from [the Releases/v1.0.0](https://github.com/ofsoundof/dhp/releases/tag/v1.0.0)or [Dropbox](https://www.dropbox.com/s/2kbqse543y2ule0/tiny-imagenet-200.tar.xz?dl=0). CIFAR dataset is automatically downloaded the first time the code is run. Place the dataset at your `--dir_data` directory.
 
-3. Download the model zoo from [Google Drive](https://drive.google.com/file/d/1ojU4jkgwJ6-qHlbD1e_nBWlUAt6ouNmz/view?usp=sharing) or [Dropbox](https://www.dropbox.com/s/vrc3zacctwm3z11/model_zoo_classification.zip?dl=0). This contains the compressed models. Place the models in `./model_zoo`.
+3. Download the model zoo from [the Releases/v1.0.0](https://github.com/ofsoundof/dhp/releases/tag/v1.0.0) or [Dropbox](https://www.dropbox.com/s/vrc3zacctwm3z11/model_zoo_classification.zip?dl=0). This contains the compressed models. Place the models in `./model_zoo`.
 
 4. [`cd ./scripts/dhp_camera_ready`](./scripts/dhp_camera_ready). 
 
